@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .div-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            display: relative;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            display: absolute;
+            transform: translateX(50%) translateY(50%);
+        }
+        .stand{
+            width: 10px;
+            height: 200px;
+            background-color: firebrick;
+            display: absolute;
+            transform: translateY(-50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-container">
+        <div class="box">
+            <div class="circle"></div>
+            <div class="stand"></div>
+        </div>
+    </div>
+</body>
+
+</html>
